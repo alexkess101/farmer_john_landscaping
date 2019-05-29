@@ -93,5 +93,78 @@
         text-align: center;
         margin-top: 10px;
     }
-
 }
+
+//still working on this!
+.animation-wrapper {
+    width: 100vw;
+    height: 40px;
+    background-color: $lightGreen;
+}
+
+.helper-wrapper {
+    @include center;
+
+    .title {
+        @include titleStyle;
+
+    }
+
+    .subheading {
+        @include subHeadingStyle;
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        
+        .list-wrapper {
+            .item {
+                @include center;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.quotes-container {
+    @include center;
+    height: 550px;
+    
+    .title {
+        @include titleStyle;
+    }
+
+    .quotes-wrapper {
+        width: 75vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+
+        .box-wrapper {
+            @include center;
+            height: 300px;
+            justify-content: flex-start;
+            box-shadow: 0px 0px 3px 1px rgba($color: $spanishGrey, $alpha: 0.3);
+
+            .image {
+                background-image: url(../images/mower_with_cass.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 60%
+            }
+
+            .subheading {
+                text-align: center;
+                padding-top: 17px;
+                background-color: rgba($color: $spanishGrey, $alpha: 0.3);
+                height: 40%;
+                width: 100%;
+
+            }
+        }
+
+    }
+}
+

@@ -1,0 +1,22 @@
+//greens 
+$lightGreen: #079941;
+$middleGreen: #078238;
+$darkGreen: #05602a;
+
+//background colors
+$whiteBlue: #f4fdff;
+$spanishGrey: #999999;
+
+//text
+$eerieBlack: #1c1c1c;
+$asap: 'Asap', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$playfair: 'Playfair Display', serif;
+$yellow: #f7cd59;
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

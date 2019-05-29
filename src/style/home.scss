@@ -36,21 +36,62 @@
     @include center;
 
     .title {
-        font-family: $montserrat;
-        font-size: 2.5em;
-        color: $yellow;
-        letter-spacing: 2px;
+        @include titleStyle;
     }
 
     .subheading {
-        font-family: $asap;
-        font-size: 1.4em;
+        @include subHeadingStyle;
         width: 850px;
         text-align: center;
-        letter-spacing: 1px;
         margin-top: 15px;
         line-height: 35px;
+    }
+}
 
+.touched-wrapper {
+    @include center;
+    height: 475px;
+
+    .title {
+        @include titleStyle;
+    }
+
+    .subtitle {
+        @include subHeadingStyle;
+        margin-top: 10px;
+    }
+
+    .circle-image-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 800px;
+        margin-top: 43px;
+
+        .img1, .img2, .img3 {
+            background-image: url(../images/mower_with_cass.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.quality-wrapper {
+    @include center;
+    height: 300px;
+    margin-top: 30px;
+    
+    .title {
+        @include titleStyle;
+    }
+
+    .subheading {
+        @include subHeadingStyle;
+        width: 700px;
+        text-align: center;
+        margin-top: 10px;
     }
 
 }

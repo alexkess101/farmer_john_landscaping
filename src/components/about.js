@@ -52,6 +52,14 @@ export default class About extends Component {
                         <div className="list-item"> dolor sit, amet consectetur adipisicing elit.</div>
                     </div>
                 </div>
+
+                <div className="credit-image-wrapper">
+                    <div className="image-grid">
+                        <div className="img img1"></div>
+                        <div className="img img2"></div>
+                        <div className="img img3"></div>
+                    </div>
+                </div>
                 <Footer/>
             </div>
         )

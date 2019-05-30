@@ -12,9 +12,9 @@ export default class Gallery extends Component {
 
     render() {
         return (
-            <div>
+            <div className='gallery-container'>
                 <NavBar/>
-                this is the gallery page
+                
 
                 <Footer/>
             </div>

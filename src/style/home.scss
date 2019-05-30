@@ -82,9 +82,11 @@
     @include center;
     height: 300px;
     margin-top: 30px;
+    margin-bottom: 30px;
     
     .title {
         @include titleStyle;
+        
     }
 
     .subheading {
@@ -95,7 +97,7 @@
     }
 }
 
-//still working on this!
+
 .animation-wrapper {
     width: 100vw;
     height: 40px;
@@ -104,6 +106,7 @@
 
 .helper-wrapper {
     @include center;
+    height: 330px;
 
     .title {
         @include titleStyle;
@@ -132,6 +135,7 @@
     
     .title {
         @include titleStyle;
+        margin-bottom: 30px;
     }
 
     .quotes-wrapper {
@@ -165,6 +169,75 @@
             }
         }
 
+    }
+}
+
+.connect-wrapper {
+    @include center;
+    height: 500px;
+
+    .link{
+        color: white;
+        position:relative;
+        text-decoration:none;
+        display:inline-block;
+        font-family: $montserrat;
+        color: $spanishGrey;
+        font-weight: 700;
+        font-size: 1.1em;
+        margin-top: 7px;
+
+        &:hover{
+            color: $spanishGrey;
+        }
+      }
+
+      .link:after {
+        display:block;
+        content: '';
+        border-bottom: solid 1px $spanishGrey;  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+        transform-origin:100% 50%
+      }
+      .link:hover:after { 
+        transform: scaleX(1);
+        transform-origin:0 50%;
+      }
+
+    .info-wrapper {
+        display: flex;
+        margin-top: 33px;
+    }
+
+    .title {
+        @include titleStyle;
+    }
+
+    .info {
+        @include center;
+        align-items: stretch;
+        text-align: left;
+        width: 300px;
+        color: $eerieBlack;
+        font-size: 1.1em;
+        font-family: $montserrat;
+
+        .phone {
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .email {
+            margin-top: 5px;
+        }
+
+    }
+
+    .subheading {
+        @include subHeadingStyle;
+        text-align: center;
+        width: 600px;
     }
 }
 

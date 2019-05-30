@@ -1,0 +1,12 @@
+.footer-container {
+    @include center;
+    height: 110px;
+    background-color: rgba($color: $spanishGrey, $alpha: 0.8);
+    
+    .copyright {
+        font-family: $asap;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        color: rgba($color: $eerieBlack, $alpha: 0.8)
+    }
+}

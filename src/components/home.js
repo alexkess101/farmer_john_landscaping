@@ -5,8 +5,7 @@ import { Tween } from 'react-gsap';
 
 import Navbar from './navbar';
 import Footer from './footer';
-import { SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION } from 'constants';
-import { Strong } from 'gsap';
+
 
 export default class Home extends Component {
     constructor() {
@@ -48,9 +47,9 @@ export default class Home extends Component {
                     </div>
                     
                     <div className="circle-image-wrapper">
-                        <NavLink className="img1"></NavLink>
-                        <NavLink className="img2"></NavLink>
-                        <NavLink className="img3"></NavLink>
+                        <NavLink to='#' className="img1"></NavLink>
+                        <NavLink to='#' className="img2"></NavLink>
+                        <NavLink to='#' className="img3"></NavLink>
                     </div>
                 </div>
                 
@@ -76,15 +75,13 @@ export default class Home extends Component {
                             paused
                             
                             >
-                            <div className="animation-wrapper">
-
-                            </div>
+                            <div className="animation-wrapper"></div>
                             
                         </Tween>
                         )}
                     </Scene>
                 </Controller>
-
+                
                 <div className="helper-wrapper">
                     <div className="title">
                             How can we help you?
@@ -131,6 +128,30 @@ export default class Home extends Component {
                             <div className="subheading">
                                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ullam nobis eos odio suscipit rem sed at."
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="connect-wrapper">
+                    <div className="title">
+                            Connect With Us
+                    </div>
+                    
+                    <NavLink to='#' className="link">click here to connect with us</NavLink>
+                    
+                    <div className="info-wrapper">
+                        <div className="info">
+                                <div className="phone">
+                                    801-979-1888
+                                </div>
+
+                                <div className="email">
+                                    kellyjik@hotmail.com
+                                </div>
+                        </div>
+
+                        <div className="subheading">
+                                Contact us today for an instant quote. Let us know that you found us on our website and we'll give you a discount. Take care of your lawn with Farmer John.
                         </div>
                     </div>
                 </div>

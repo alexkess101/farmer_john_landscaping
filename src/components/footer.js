@@ -8,8 +8,11 @@ export default class Footer extends Component {
 
     render() {
         return (
-            <div>
-                this is the footer!
+            <div className= 'footer-container'>
+                <div className="copyright">
+                    <i class="far fa-copyright"></i> Farmer Johns Landscaping LLC || All Rights Reserved
+                </div>
+                
             </div>
         )
     }

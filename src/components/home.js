@@ -66,14 +66,32 @@ export default class Home extends Component {
                 <Controller>
                     <Scene
                         triggerElement='#trigger'
-                        duration={420}
+                        duration={500}
+                    >
+                        {(progress) => (
+                            <Tween
+                                from={{x:'98vw'}}
+                                to={{x:'-50%'}}
+                                totalProgress={progress}
+                                offset={3}
+                                paused
+                            >
+                                <div className="lawn-mower-img"></div>
+                            </Tween>
+                        )}
+
+                    </Scene>
+
+                    <Scene
+                        triggerElement='#trigger'
+                        duration={500}
                     >
                         {(progress) => (
                             <Tween
                             to={{width: '0px'}}
                             totalProgress={progress}
                             paused
-                            
+                            offset={3}
                             >
                             <div className="animation-wrapper"></div>
                             
@@ -81,6 +99,7 @@ export default class Home extends Component {
                         )}
                     </Scene>
                 </Controller>
+                <div className="grass-wrapper"></div>
                 
                 <div className="helper-wrapper">
                     <div className="title">
@@ -136,7 +155,7 @@ export default class Home extends Component {
                     <div className="title">
                             Connect With Us
                     </div>
-                    
+
                     <NavLink to='#' className="link">click here to connect with us</NavLink>
                     
                     <div className="info-wrapper">

@@ -97,11 +97,31 @@
     }
 }
 
+.lawn-mower-img {
+    background-image: url(../images/lawn-mower2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    margin-bottom: -43px;
+    width: 150px;
+    height: 150px;
+}
 
 .animation-wrapper {
     width: 100vw;
-    height: 40px;
+    height: 13px;
     background-color: $lightGreen;
+}
+.grass-wrapper {
+    width: 100vw;
+    height: 35px;
+    background-color: $middleGreen;
 }
 
 .helper-wrapper {

@@ -12,7 +12,6 @@ export default class Footer extends Component {
                 <div className="copyright">
                     <i class="far fa-copyright"></i> Farmer Johns Landscaping LLC || All Rights Reserved
                 </div>
-                
             </div>
         )
     }

@@ -1,0 +1,78 @@
+.about-container {
+    background-color: $whiteBlue;
+
+    .hero-wrapper {
+        @include center;
+
+        .title {
+            margin-top: 120px;
+            @include titleStyle;
+            font-family: $playfair;
+            letter-spacing: 4px;
+            font-size: 4em;
+        }
+        .content-wrapper {
+            height: 730px;
+            @include center;
+            flex-direction: row;
+
+            .subheading {
+                @include subHeadingStyle;
+                width: 600px;
+                text-align: center;
+                margin-top: 50px;
+                line-height: 180%;
+                margin-left: 40px;
+                font-size: 1.7em;
+    
+            }
+    
+            .john-image {
+                background-image: url(https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1030&q=80);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 600px;
+                width: 470px;
+                margin-right: 30px;
+            }
+        }
+        
+    }
+
+    .qualifications-wrapper {
+        height: 500px;
+        @include center;
+
+        .title {
+            @include titleStyle;
+            margin-bottom: 13px;
+        }
+
+        .subheading {
+            @include subHeadingStyle;
+            width: 600px;
+            text-align: center;
+        }
+    }
+
+    .skills-wrapper {
+        @include center;
+        height: 600px;
+
+        .title {
+            @include titleStyle;
+            margin-bottom: 15px;
+        }
+
+        .list-wrapper {
+            text-align: center;
+            @include subHeadingStyle;
+
+            .list-item {
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+}

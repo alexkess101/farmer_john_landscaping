@@ -25,6 +25,8 @@
             font-family: $montserrat;
             font-size: 2em;
             letter-spacing: 2px;
+            @include mobileWidth(300px);
+            @include mobileFontSize(1.5em);
 
         }
     }
@@ -90,6 +92,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
     
+    
     .title {
         @include titleStyle;
         @include smallTitleStyle;
@@ -135,6 +138,7 @@
 .helper-wrapper {
     @include center;
     height: 330px;
+    @include mobileHeight(600px);
 
     .title {
         @include titleStyle;

@@ -31,7 +31,7 @@
                 line-height: 180%;
                 margin-left: 40px;
                 font-size: 1.7em;
-                @include mobileWidth(450px);
+                @include mobileWidth(300px);
     
             }
     
@@ -66,7 +66,7 @@
             @include smallSubHeadingStyle;
             width: 600px;
             text-align: center;
-            @include mobileWidth(450px);
+            @include mobileWidth(300px);
         }
     }
 

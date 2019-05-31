@@ -34,6 +34,7 @@
                 width: 830px;
                 margin-bottom: 31px;
                 @include contactMobileGrid;
+                @include mobileWidth(300px);
 
                 .left-side, .right-side {
                     @include center;

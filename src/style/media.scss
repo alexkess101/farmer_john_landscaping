@@ -40,7 +40,7 @@
 
         .residential-commercial-wrapper {
             .subheading {
-                width: 450px;
+                width: 350px;
             }
         }
 
@@ -57,7 +57,7 @@
         .quality-wrapper {
             margin-top: 80px;
             .subheading {
-                width: 400px;
+                width: 300px;
                 
             }
         }
@@ -65,9 +65,9 @@
         .helper-wrapper {
             .subheading {
                 grid-gap:25px;
-                width: 460px;
+                width: 300px;
                 .list-wrapper {
-                    width: 200px;
+                    width: 100px;
                     
                 }
             }
@@ -93,7 +93,7 @@
                 }
 
                 .subheading {
-                    width: 400px;
+                    width: 300px;
                 }
             }
         }
@@ -140,7 +140,7 @@
 @mixin contactMobileGrid {
     @media(max-width: 890px) {
         grid-template-columns: 1fr;
-        width: 500px;
+        width: 300px;
     }
 }
 
@@ -155,6 +155,14 @@
         width: $width;
     }
 }
+
+
+@mixin mobileFontSize($size) {
+    @media(max-width: 890px) {
+        font-size: $size;
+    }
+}
+
 
 
 

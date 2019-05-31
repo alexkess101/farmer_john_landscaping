@@ -7,6 +7,9 @@
         font-family: $asap;
         font-size: 0.8em;
         letter-spacing: 1px;
-        color: rgba($color: $eerieBlack, $alpha: 0.8)
+        color: rgba($color: $eerieBlack, $alpha: 0.8);
+        @include mobileWidth(300px);
+        @include mobileFontSize(0.6em);
+        
     }
 }

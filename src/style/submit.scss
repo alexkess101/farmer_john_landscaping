@@ -1,0 +1,25 @@
+.submit-page-wrapper {
+    background-color: $whiteBlue;
+    height: 100vh;
+    width: 100vw;
+    @include center;
+
+    .title {
+        @include titleStyle;
+        width: 900px;
+        text-align: center;
+    }
+
+    .link {
+        margin-top: 20px;
+        font-family: asap;
+        font-size: 1.2em;
+        color: rgba($color: $eerieBlack, $alpha: 0.5);
+
+        &:hover {
+            text-decoration: none;
+            color: rgba($color: $eerieBlack, $alpha: 1.0)
+        }
+
+    }
+}

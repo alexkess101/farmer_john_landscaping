@@ -47,9 +47,9 @@ export default class Home extends Component {
                     </div>
                     
                     <div className="circle-image-wrapper">
-                        <NavLink to='#' className="img1"></NavLink>
-                        <NavLink to='#' className="img2"></NavLink>
-                        <NavLink to='#' className="img3"></NavLink>
+                        <NavLink to='/gallery' className="img1"></NavLink>
+                        <NavLink to='/gallery' className="img2"></NavLink>
+                        <NavLink to='/gallery' className="img3"></NavLink>
                     </div>
                 </div>
                 
@@ -156,7 +156,7 @@ export default class Home extends Component {
                             Connect With Us
                     </div>
 
-                    <NavLink to='#' className="link">click here to connect with us</NavLink>
+                    <NavLink to='/contact' className="link">click here to connect with us</NavLink>
                     
                     <div className="info-wrapper">
                         <div className="info">

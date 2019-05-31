@@ -1,0 +1,99 @@
+.contact-container {
+    background-color: $whiteBlue;
+
+    .contact-wrapper {
+        @include center;
+
+        .title {
+            @include titleStyle;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .error-message {
+            width: 500px;
+            height: 40px;
+            margin-top: 5px;
+            color: red;
+            font-family: asap;
+            font-size: 1.2em;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .form-wrapper {
+            @include center;
+            height: 380px;
+            margin-top: -20px;
+
+            .inputs {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 830px;
+                margin-bottom: 31px;
+
+                .left-side, .right-side {
+                    @include center;
+                }
+
+                .left-side {
+                    input {
+                        width: 90%;
+                        font-family: $montserrat;
+                        padding-left: 5px;
+                        height: 46px;
+                        margin-bottom: 3px;
+                        color: $eerieBlack;
+                        letter-spacing: 1px;
+                        border-radius: 5px;
+                        border: 1px solid rgba($color: $eerieBlack, $alpha: 0.2);
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    .address-wrapper {
+                        display: flex;
+                        width: 90%;
+                    }
+                }
+
+                .right-side {
+                    textarea {
+                        width: 80%;
+                        border: 1px solid $spanishGrey;
+                        font-family: $montserrat;
+                        padding-left: 5px;
+                        color: $eerieBlack;
+                        border-radius: 5px;
+                        border: 1px solid rgba($color: $eerieBlack, $alpha: 0.2);
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+            .button {
+                background-color: rgba($color: $eerieBlack, $alpha: 0.1);
+                color: rgba($color: $eerieBlack, $alpha: 0.6);
+                
+                width: 100px;
+                height: 40px;
+                font-family: $montserrat;
+                letter-spacing: 1px;
+                border-radius: 5px;
+                border: none;
+                
+
+                &:hover {
+                    border: 1px solid rgba($color: $eerieBlack, $alpha: 0.3)
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

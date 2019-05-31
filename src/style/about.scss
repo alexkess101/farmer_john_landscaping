@@ -19,6 +19,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             @include mobileGrid;
+            @include mobileHeight(900px);
             
 
             .subheading {
@@ -30,6 +31,7 @@
                 line-height: 180%;
                 margin-left: 40px;
                 font-size: 1.7em;
+                @include mobileWidth(450px);
     
             }
     
@@ -41,6 +43,8 @@
                 height: 600px;
                 width: 470px;
                 margin-right: 30px;
+                
+
             }
         }
         
@@ -49,6 +53,7 @@
     .qualifications-wrapper {
         height: 500px;
         @include center;
+        @include mobileHeight(300px);
 
         .title {
             @include titleStyle;
@@ -61,12 +66,14 @@
             @include smallSubHeadingStyle;
             width: 600px;
             text-align: center;
+            @include mobileWidth(450px);
         }
     }
 
     .skills-wrapper {
         @include center;
         height: 500px;
+        @include mobileHeight(300px);
 
         .title {
             @include titleStyle;
@@ -97,6 +104,7 @@
             grid-gap: 25px;
             width: 75vw;
             height: 600px;
+            @include mobileHeight(300px);
 
             .img {
                 background-repeat: no-repeat;

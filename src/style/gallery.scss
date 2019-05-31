@@ -7,6 +7,7 @@
 
         .title {
             @include titleStyle;
+            @include smallTitleStyle;
             margin-top: 40px;
             margin-bottom: 80px;
         }
@@ -17,6 +18,7 @@
             width: 90vw;
             grid-column-gap: 28px;
             grid-row-gap: 55px;
+            @include mobileGrid;
             
             .grid-photo-item {
                 background-repeat: no-repeat;

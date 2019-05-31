@@ -1,32 +1,4 @@
 
-@mixin mobileGrid {
-    @media(max-width: 890px) {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-@mixin smallTitleStyle {
-    @media (max-width: 890px) {
-        font-family: $montserrat;
-        font-size: 1.5em;
-        letter-spacing: 1px;
-        color: $yellow;
-        text-align: center;
-    }
-}
-
-@mixin smallSubHeadingStyle{
-    @media (max-width:890px) {
-        font-family: $asap;
-        font-size: 1.0em;
-        line-height: 30px;
-        letter-spacing: 1px;
-        color: $eerieBlack;
-    }
-}
-
-
 @media (max-width: 890px) {
     .navbar-container {
         .navbar-wrapper {
@@ -56,9 +28,7 @@
             visibility: hidden;
         }
     }
-}
 
-@media (max-width:890px) {
     .home-container {
         .hero-wrapper {
             .parallax-photo {
@@ -67,11 +37,7 @@
                 }
             }
         }
-    }
-}
 
-@media (max-width: 890px) {
-    .home-container {
         .residential-commercial-wrapper {
             .subheading {
                 width: 450px;
@@ -132,7 +98,65 @@
             }
         }
     }
+
+    .gallery-container {
+        .gallery-wrapper {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
 }
+
+
+
+@mixin smallTitleStyle {
+    @media (max-width: 890px) {
+        font-family: $montserrat;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        color: $yellow;
+        text-align: center;
+    }
+}
+
+@mixin smallSubHeadingStyle{
+    @media (max-width:890px) {
+        font-family: $asap;
+        font-size: 1.0em;
+        line-height: 30px;
+        letter-spacing: 1px;
+        color: $eerieBlack;
+    }
+}
+
+@mixin mobileGrid {
+    @media(max-width: 890px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@mixin contactMobileGrid {
+    @media(max-width: 890px) {
+        grid-template-columns: 1fr;
+        width: 500px;
+    }
+}
+
+@mixin mobileHeight($height) {
+    @media(max-width: 890px) {
+        height: $height;
+    }
+}
+
+@mixin mobileWidth($width) {
+    @media(max-width: 890px) {
+        width: $width;
+    }
+}
+
+
 
 
 

@@ -6,6 +6,7 @@
 
         .title {
             @include titleStyle;
+            @include smallTitleStyle;
             margin-top: 40px;
             margin-bottom: 10px;
         }
@@ -25,12 +26,14 @@
             @include center;
             height: 380px;
             margin-top: -20px;
+            @include mobileHeight(700px);
 
             .inputs {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 width: 830px;
                 margin-bottom: 31px;
+                @include contactMobileGrid;
 
                 .left-side, .right-side {
                     @include center;

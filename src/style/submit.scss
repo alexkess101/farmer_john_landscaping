@@ -6,8 +6,10 @@
 
     .title {
         @include titleStyle;
+        @include smallTitleStyle;
         width: 900px;
         text-align: center;
+        @include mobileWidth(350px);
     }
 
     .link {

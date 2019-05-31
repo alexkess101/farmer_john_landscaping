@@ -20,6 +20,8 @@
             font-size: 1.2em;
             text-align: center;
             letter-spacing: 1px;
+            @include mobileWidth(300px);
+            @include mobileFontSize(0.6);
         }
 
         .form-wrapper {

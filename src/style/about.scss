@@ -19,7 +19,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             @include mobileGrid;
-            @include mobileHeight(900px);
+            @include mobileHeight(1000px);
+            @include mobileWidth(350px);
             
 
             .subheading {
@@ -32,6 +33,7 @@
                 margin-left: 40px;
                 font-size: 1.7em;
                 @include mobileWidth(300px);
+                
     
             }
     

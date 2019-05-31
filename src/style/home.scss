@@ -37,10 +37,12 @@
 
     .title {
         @include titleStyle;
+        @include smallTitleStyle;
     }
 
     .subheading {
         @include subHeadingStyle;
+        @include smallSubHeadingStyle;
         width: 850px;
         text-align: center;
         margin-top: 15px;
@@ -54,20 +56,24 @@
 
     .title {
         @include titleStyle;
+        @include smallTitleStyle;
     }
 
     .subtitle {
         @include subHeadingStyle;
+        @include smallSubHeadingStyle;
         margin-top: 10px;
     }
 
     .circle-image-wrapper {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
         width: 800px;
         margin-top: 43px;
 
         .img1, .img2, .img3 {
+            @include center;
             background-image: url(../images/mower_with_cass.jpg);
             background-position: center;
             background-size: cover;
@@ -86,11 +92,13 @@
     
     .title {
         @include titleStyle;
+        @include smallTitleStyle;
         
     }
 
     .subheading {
         @include subHeadingStyle;
+        @include smallSubHeadingStyle;
         width: 700px;
         text-align: center;
         margin-top: 10px;
@@ -130,20 +138,22 @@
 
     .title {
         @include titleStyle;
-
+        @include smallTitleStyle;
     }
 
     .subheading {
         @include subHeadingStyle;
+        @include smallSubHeadingStyle;
         width: 70vw;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         margin-top: 25px;
         
         .list-wrapper {
             .item {
                 @include center;
                 margin-bottom: 8px;
+                text-align: center;
             }
         }
     }
@@ -155,6 +165,7 @@
     
     .title {
         @include titleStyle;
+        @include smallTitleStyle;
         margin-bottom: 30px;
     }
 
@@ -226,12 +237,14 @@
       }
 
     .info-wrapper {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         margin-top: 33px;
     }
 
     .title {
         @include titleStyle;
+        @include smallTitleStyle;
     }
 
     .info {
@@ -256,6 +269,7 @@
 
     .subheading {
         @include subHeadingStyle;
+        @include smallSubHeadingStyle;
         text-align: center;
         width: 600px;
     }

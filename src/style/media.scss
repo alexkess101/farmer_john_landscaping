@@ -1,0 +1,141 @@
+
+@mixin mobileGrid {
+    @media(max-width: 890px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@mixin smallTitleStyle {
+    @media (max-width: 890px) {
+        font-family: $montserrat;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        color: $yellow;
+        text-align: center;
+    }
+}
+
+@mixin smallSubHeadingStyle{
+    @media (max-width:890px) {
+        font-family: $asap;
+        font-size: 1.0em;
+        line-height: 30px;
+        letter-spacing: 1px;
+        color: $eerieBlack;
+    }
+}
+
+
+@media (max-width: 890px) {
+    .navbar-container {
+        .navbar-wrapper {
+            .left-side {
+                .text {
+                    visibility: hidden;
+                }
+            }
+
+            .center {
+                visibility: hidden;
+
+            }
+
+            .right-side {
+                .instant-quote, .phone-number {
+                    visibility: hidden;
+                }
+
+                i {
+                    visibility: visible;
+                }
+            }
+        }
+
+        .mobile-menu-wrapper {
+            visibility: hidden;
+        }
+    }
+}
+
+@media (max-width:890px) {
+    .home-container {
+        .hero-wrapper {
+            .parallax-photo {
+                .title {
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    .home-container {
+        .residential-commercial-wrapper {
+            .subheading {
+                width: 450px;
+            }
+        }
+
+        .touched-wrapper {
+            margin-top: 80px;
+            .circle-image-wrapper {
+                width: 200px;
+                
+                grid-template-columns: 1fr;
+                
+            }
+        }
+
+        .quality-wrapper {
+            margin-top: 80px;
+            .subheading {
+                width: 400px;
+                
+            }
+        }
+
+        .helper-wrapper {
+            .subheading {
+                grid-gap:25px;
+                width: 460px;
+                .list-wrapper {
+                    width: 200px;
+                    
+                }
+            }
+        }
+
+        .quotes-container {
+            height: 1000px;
+            margin-top: 70px;
+            .quotes-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .connect-wrapper {
+            .info-wrapper {
+                grid-template-columns: 1fr;
+                
+
+                .info {
+                    @include center;
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+
+                .subheading {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

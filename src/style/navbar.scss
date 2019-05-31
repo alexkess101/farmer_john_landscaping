@@ -1,11 +1,11 @@
 .navbar-container {
-    height: 97px;
-    width: 100vw;
-    background-color: rgba($color: #999999, $alpha: 0.8);
-    position: fixed;
-
+    width: 100%;
     .navbar-wrapper {
         display: flex;
+        position: fixed;
+        background-color: rgba($color: #999999, $alpha: 0.8);
+        height: 97px;
+        width: 100%;
         
 
         .left-side {
@@ -89,6 +89,47 @@
         .phone-number {
             letter-spacing: 1px;
             color: $yellow;
+        }
+
+        i {
+            visibility: hidden;
+            position: fixed;
+            top:25px;
+            right:25px;
+            font-size: 3em;
+        }
+    }
+
+    .mobile-menu-wrapper {
+        visibility: hidden;
+        position: fixed;
+        margin-top: 97px;
+
+        .bottom {
+            border-bottom: 1px solid $eerieBlack;
+
+        }
+
+        .navlink {
+            width: 100vw;
+            background-color: rgba($color: #999999, $alpha: 0.8);
+            border-top: 1px solid $eerieBlack;
+            height: 70px;
+            color: white;
+            font-family: $montserrat;
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            @include center;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            &:active {
+                background-color: rgba($color: $eerieBlack, $alpha: 0.6);
+                
+
+            }
         }
     }
 }

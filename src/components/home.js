@@ -70,7 +70,7 @@ export default class Home extends Component {
                     >
                         {(progress) => (
                             <Tween
-                                from={{x:'98vw'}}
+                                from={{x:'88vw'}}
                                 to={{x:'-50%'}}
                                 totalProgress={progress}
                                 offset={3}
@@ -88,6 +88,7 @@ export default class Home extends Component {
                     >
                         {(progress) => (
                             <Tween
+                            from={{width: '90%'}}
                             to={{width: '0px'}}
                             totalProgress={progress}
                             paused

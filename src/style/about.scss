@@ -7,17 +7,23 @@
         .title {
             margin-top: 120px;
             @include titleStyle;
+            @include smallTitleStyle;
             font-family: $playfair;
             letter-spacing: 4px;
             font-size: 4em;
+
         }
+
         .content-wrapper {
             height: 730px;
-            @include center;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            @include mobileGrid;
+            
 
             .subheading {
                 @include subHeadingStyle;
+                @include smallSubHeadingStyle;
                 width: 600px;
                 text-align: center;
                 margin-top: 50px;
@@ -46,11 +52,13 @@
 
         .title {
             @include titleStyle;
+            @include smallTitleStyle;
             margin-bottom: 13px;
         }
 
         .subheading {
             @include subHeadingStyle;
+            @include smallSubHeadingStyle;
             width: 600px;
             text-align: center;
         }
@@ -62,12 +70,14 @@
 
         .title {
             @include titleStyle;
+            @include smallTitleStyle;
             margin-bottom: 15px;
         }
 
         .list-wrapper {
             text-align: center;
             @include subHeadingStyle;
+            @include smallSubHeadingStyle;
 
             .list-item {
                 margin-bottom: 15px;

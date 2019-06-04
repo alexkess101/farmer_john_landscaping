@@ -29,11 +29,11 @@ export default class Home extends Component {
 
                 <div className="residential-commercial-wrapper">
                     <div className="title">
-                        Residential and commercial
+                        Residential and Commercial
                     </div>
 
                     <div className="subheading">
-                        Being a local company doesn't keep us from picking up big jobs. We do anything from town homes to local businesses with multiple properties around the county.
+                        With multiple properties around the county we do anything from town homes to local businesses, small jobs to big jobs, and tiny residential to large commercial.
                     </div>
                 </div>
 
@@ -109,17 +109,14 @@ export default class Home extends Component {
 
                     <div className="subheading">
                         <div className="list-wrapper">
-                            <div className="item">Lorem ipsum dolor sit amet consectetur.</div>
-                            <div className="item">Lorem ipsum dolor sit amet consectetur.</div>
-                            <div className="item">Lorem ipsum dolor sit amet consectetur.</div>
+                            <div className="item">Lawn growing out of control or you just don't have time anymore to keep it looking nice? We can help.</div>
                         </div>
 
                         <div className="list-wrapper">
-                            <div className="item">Lorem ipsum dolor sit amet consectetur.</div>
-                            <div className="item">Lorem ipsum dolor sit amet consectetur.</div>
-                            <div className="item">Lorem ipsum dolor sit amet consectetur.</div>
-                        </div>
+                            <div className="item">Sprinkler system leaking or lost pressure and you've tried to fix it yourself, but just can't seem to find the problem? We can help.</div>
+                        </div> 
                     </div>
+                    <NavLink to='/about' className='link'>need more help?</NavLink>
                 </div>
                 
 
@@ -171,7 +168,7 @@ export default class Home extends Component {
                         </div>
 
                         <div className="subheading">
-                                Contact us today for an instant quote. Let us know that you found us on our website and we'll give you a discount. Take care of your lawn with Farmer John.
+                                Contact us today for an instant quote. When you call ask us about our promotional deals that we have going on around your neighborhood. Take care of your lawn with Farmer John's.
                         </div>
                     </div>
                 </div>

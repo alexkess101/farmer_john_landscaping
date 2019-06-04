@@ -7,6 +7,7 @@
         height: 97px;
         width: 100%;
         
+        
 
         .left-side {
             display: flex;
@@ -130,6 +131,27 @@
                 
 
             }
+        }
+    }
+}
+
+.small-center {
+    visibility: hidden;
+    position: fixed;
+    left: 147px;
+    top: 20px;
+    @include center;
+
+    .subheading, a {
+        font-family: $asap;
+    }
+
+    a {
+        color: $yellow;
+        margin-top: 5px;
+
+        &:hover {
+            text-decoration: none;
         }
     }
 }

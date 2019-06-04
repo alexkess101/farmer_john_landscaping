@@ -42,7 +42,13 @@ export default class Navbar extends Component {
                         <NavLink to='/about' className="navlink">ABOUT</NavLink>
                         <NavLink to='/gallery' className="navlink">GALLERY</NavLink>
                         <NavLink to='/contact' className="navlink">CONTACT</NavLink>
+                    </div>
 
+                    <div className="small-center">
+                        <div className="subheading">
+                            Tap to call for an instant quote
+                        </div>
+                        <a href="tel:18019791888">801-979-1888</a>
                     </div>
 
                     <div className="right-side">
